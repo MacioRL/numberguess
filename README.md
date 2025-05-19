@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Zgadnij liczbę!</title>
+    <title>Guess the number!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,14 +40,14 @@
     </style>
 </head>
 <body>
-    <h2>Zgadnij liczbę!</h2>
+    <h2>Guess the number!</h2>
     <p>
-        Komputer wylosował liczbę od <span id="min">1</span> do <span id="max">100</span>. Spróbuj ją zgadnąć!
+       The computer has randomly selected a location from <span id="min">1</span> to <span id="max">100</span>. Go guess it!
     </p>
     <input type="number" id="guess" min="1" max="100" autofocus>
-    <button onclick="checkGuess()">Zgaduję!</button>
+    <button onclick="checkGuess()">I'm guessing!</button>
     <div id="result"></div>
-    <button id="reset" onclick="resetGame()">Nowa gra</button>
+    <button id="reset" onclick="resetGame()">New game</button>
     <script>
         // Parametry gry
         const min = 1;
