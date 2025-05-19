@@ -77,11 +77,11 @@
             }
             attempts++;
             if (guess < secretNumber) {
-                document.getElementById('result').textContent = "Za mało!";
+                document.getElementById('result').textContent = "Too little!";
             } else if (guess > secretNumber) {
-                document.getElementById('result').textContent = "Za dużo!";
+                document.getElementById('result').textContent = "Too much!!";
             } else {
-                document.getElementById('result').textContent = `Brawo! Zgadłeś liczbę ${secretNumber} za ${attempts} razem!`;
+                document.getElementById('result').textContent = `Well done! You guessed ${secretNumber} for ${attempts} total!`;
                 guessInput.disabled = true;
                 document.querySelector('button[onclick="checkGuess()"]').disabled = true;
             }
